@@ -32,16 +32,6 @@ body{
     justify-content: center;
 }
 
-header{
-    width: 100%;
-    padding: 5% 10%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--cor-branco-200);
-}
-
 #opcoesCadastro{
     display: flex;
     justify-content: space-between;
@@ -66,7 +56,7 @@ header{
 main{
     width: 90%;
     height: 80%;
-    padding: 10% 5%;
+    padding: 10px 5%;
     display: flex;
     flex-direction: column;
     gap: 20px;

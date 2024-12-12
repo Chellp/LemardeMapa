@@ -200,10 +200,10 @@ console.log(historicoPesquisa);
     /* Exibir Menu Lateral */
 
       /* nome, sobrenome, dtNasc, cpf, cnh, idiomas, nacionalidade, descricao */
-      let teste1 = new Motorista('nomeMotorista 1', 'sobrenomeMotorista 1', '2024-01-02', 123456789, 555555, 'idiomaMotorista', 'nacionaliadadeMotorista 1', 'descMotorista 1')
+      let teste1 = new Motorista('Bruno', 'Pires Olibeira', '2006-06-17', 3977785902, 555555, 'Portugês, Inglês', 'Brasil', 'Manezao')
       //id1 = teste1.gerarId()
       teste1.cadastrarCarro( 'NomeCarro 1', 'modeloCarro 1', 2021, 'corCarro 1', 'placaCarro 1')
-      let teste2 = new Motorista('nomeMotorista 2', 'sobrenomeMotorista 2', '2024-01-02', 123456789, 555555, 'idiomaMotorista', 'nacionaliadadeMotorista 3', 'descMotorista 2')
+      let teste2 = new Motorista('Gustavo', 'Onório', '2024-01-02', 123456789, 555555, 'Potuguês', 'Brasil', 'Manezao 2')
       teste2.cadastrarCarro('NomeCarro 2', 'modeloCarro 2', 2021, 'corCarro 2', 'placaCarro 2')
 
       let testeMotorista = [teste1, teste2]
