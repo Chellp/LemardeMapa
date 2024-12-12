@@ -226,15 +226,30 @@ console.log(historicoPesquisa);
       let section = document.getElementById('navInferior-enderecos');
   
       for(let endereco of historicoPesquisa){
-        const elemento = `<div class="item item-endereco">
-                  <p>${endereco}</p>
-              </div>`
-        section.innerHTML+= elemento;
+        const divItem = document.createElement('div');
+        divItem.setAttribute('class', 'item item-endereço');
+        //divItem.setAttribute('class', 'item-endereço');
+        const p = document.createElement('p');
+        p.textContent= endereco;
+        const icone = document.createElement('ion-icon');
+        icone.setAttribute('name', 'heart-outline');
+
+        icone.addEventListener('click', ()=>{
+          alert('ok')
+        })
+        p.appendChild(icone)
+        divItem.appendChild(p); 
+        section.appendChild(divItem)
+
+        /* const elemento = `<div class="item item-endereco">
+                  <p>${endereco} <ion-icon name="heart-outline"></ion-icon></p>
+              </div>`;
+         */
       }
 
       return section
     }
-    console.log(Historicoenderecos());
+    Historicoenderecos()
     
   })
 
@@ -319,5 +334,3 @@ languageSelect.addEventListener("change", (event) => {
 
 // Define o idioma padrão
 changeLanguage("pt");
-
-
